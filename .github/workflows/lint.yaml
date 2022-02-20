@@ -27,4 +27,4 @@ jobs:
       - name: Lint with flake8 and mypy
         run: |
             flake8 src/
-            mypy src/
+            mypy --strict src/
