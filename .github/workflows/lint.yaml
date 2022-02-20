@@ -1,9 +1,6 @@
 name: Lint
 
-on:
-  push:
-    paths:
-      - '*.py'
+on: push
 
 jobs:
   lint:
@@ -29,5 +26,5 @@ jobs:
 
       - name: Lint with flake8 and mypy
         run: |
-            flake8 .
-            mypy .
+            flake8 src/
+            mypy src/
